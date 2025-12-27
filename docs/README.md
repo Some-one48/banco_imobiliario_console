@@ -25,25 +25,31 @@ Obs.: É necessário que você tenha um editor de código, como o VS Code, insta
 Para compreender melhor, daremos um exemplo prático onde três amigos - Jonas, Mariana e Miguel - estarão jogando o jogo.
 
 Ao iniciar o programa com o comando Ctrl+Alt+N, será impresso na tela
+
     ----------------------------------------------
             BEM-VINDO AO BANCO IMOBILIÁRIO
     ----------------------------------------------
     Digite a quantidade de jogadores: 
+    
 Agora, você deverá inserir a quantidade de jogadores no terminal, variando de 2 a 4 pessoas.
 Seguindo o nosso exemplo, o grupo digitará "3"
 
 Em seguida, será requisitado o nome dos jogadores, para definir os turnos.
-    Digite o nome do jogador X: 
+
+        Digite o nome do jogador X: 
+        
 A ordem que for inserida será a ordem de jogada.
 Obs.: Não esqueça de dar Enter após digitar o nome, caso contrário, o programa não seguirá para o próximo jogador.
 
 Então será impressa a ordem de jogada:
+
     --------------------------------
             ORDEM DE JOGADA:
     --------------------------------
     1. Mariana
     2. Miguel
     3. Jonas
+    
 Não é necessário que os jogadores façam nada. Após 2 segundos o terminal será limpo.
 
 ### O Jogo
