@@ -11,9 +11,9 @@ def dado():
     return dado
 
 def header():
-    print('----------------------------------------------')
-    print('\tBEM-VINDO AO BANCO IMOBILIÁRIO')
-    print('----------------------------------------------')
+    print('----------------------------------')
+    print('\tBANCO IMOBILIÁRIO')
+    print('----------------------------------')
 
 def newPlayer(p:list):
     for i in range(len(p)):
@@ -63,9 +63,11 @@ if __name__ == '__main__':
     finish = False
 
     # INICIO
-    '''header()
+    '''print('----------------------------------------------')
+    print('\tBEM-VINDO AO BANCO IMOBILIÁRIO')
+    print('----------------------------------------------')
 
-    qtd_j = int(input('Digite a quantpositionade de jogadores: '))
+    qtd_j = int(input('Digite a quantidade de jogadores: '))
 
     jogadores = []
     for i in range(qtd_j):
