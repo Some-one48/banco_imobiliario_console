@@ -2,9 +2,15 @@
 
 ## Instalação
 
+### Estrutura do arquivo
+    banco_imobiliario_console/  
+    ├── docs/
+    │   ├── README.md
+    │   └── LICENSE
+    ├── main.py  
+    └──  terrenos.csv  
+    
 ## Como usar
-
-## Estrutura do arquivo
 
 ## Licença
 Este projeto está licenciado sob a MIT License - veja o arquivo [LICENSE](LICENSE) para mais detalhes.  
