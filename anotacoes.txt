@@ -1,0 +1,7 @@
+TERRENOS.CSV
+0 - position
+1 - nome
+2 - custo
+
+SIT.CSV
+6 - dono

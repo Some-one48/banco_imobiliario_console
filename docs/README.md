@@ -5,20 +5,20 @@ Uma versão simples de Banco Imobiliário ainda em desenvolvimento, que pode ser
 1. Vá em "Code" na pasta do repositório no GitHub e clique em "Download ZIP"
 2. Após baixar o arquivo ZIP do projeto, vá em seu Gerenciador de Arquivos e extraia "banco_imobiliario_console.zip"
 3. Com o arquivo extraído, clique sobre ele com o botão direito e selecione "Abrir com Code" (ou "Abrir com..." outro editor de código que você tenha)
-4. Abra o arquivo "main.py"
+4. Abra o arquivo [main.py](main.py)
 5. Dê Ctrl + S
 6. Dê Ctrl + Alt + N ou clique no simbolo de Play (triângulo) no canto superior direito da tela
 7. Divirta-se!
 
 Obs.: É necessário que você tenha um editor de código, como o VS Code, instalado para isso.
 
-### Estrutura do arquivo
+### Estrutura do Projeto
     banco_imobiliario_console/  
     ├── docs/
     │   ├── LICENSE
     │   └── README.md
     ├── main.py  
-    └──  terrenos.csv  
+    └── terrenos.csv  
     
 ## Como jogar?
 ### Definições iniciais

@@ -5,6 +5,43 @@ import time
 from colorama import init, Fore, Back, Style # pip install
 
 players = []
+sit = [
+    [0,0,0,0,0,'none'],
+    [0,0,0,0,0,'none'],
+    [0,0,0,0,0,'none'],
+    [0,0,0,0,0,'none'],
+    [0,0,0,0,0,'none'],
+    [0,0,0,0,0,'none'],
+    [0,0,0,0,0,'none'],
+    [0,0,0,0,0,'none'],
+    [0,0,0,0,0,'none'],
+    [0,0,0,0,0,'none'],
+    [0,0,0,0,0,'none'],
+    [0,0,0,0,0,'none'],
+    [0,0,0,0,0,'none'],
+    [0,0,0,0,0,'none'],
+    [0,0,0,0,0,'none'],
+    [0,0,0,0,0,'none'],
+    [0,0,0,0,0,'none'],
+    [0,0,0,0,0,'none'],
+    [0,0,0,0,0,'none'],
+    [0,0,0,0,0,'none'],
+    [0,0,0,0,0,'none'],
+    [0,0,0,0,0,'none'],
+    [0,0,0,0,0,'none'],
+    [0,0,0,0,0,'none'],
+    [0,0,0,0,0,'none'],
+    [0,0,0,0,0,'none'],
+    [0,0,0,0,0,'none'],
+    [0,0,0,0,0,'none'],
+    [0,0,0,0,0,'none'],
+    [0,0,0,0,0,'none'],
+    [0,0,0,0,0,'none'],
+    [0,0,0,0,0,'none'],
+    [0,0,0,0,0,'none'],
+    [0,0,0,0,0,'none'],
+    [0,0,0,0,0,'none'],
+]
 
 def dado():
     dado = randint(1,6)
@@ -36,11 +73,12 @@ def acoes(dado:int, o:int):
     p = players[o-1]
     saldo = p['saldo']
 
-    p['casa'] += dado
+    p['casa_atual'] += dado
+    casa = p['casa_atual']
 
     with open('terrenos.csv', 'r') as file:
-        reader = csv.reader
-        parou = reader[p['casa']]
+        reader = list(csv.reader)
+        parou = reader[casa]
 
         print(parou[1])
         print(f'Preço: {parou[2]}')
@@ -55,7 +93,7 @@ def acoes(dado:int, o:int):
     if a not in [1,2,3]:
         print('\n')
         print(Back.RED + 'ERRO:' + Back.RESET + Fore.RED +'Digite uma operação válida' + Fore.RESET)
-        acoes(2, o)
+        acoes(dado, o)
     else:
         print('All right :D')
 
@@ -63,7 +101,7 @@ if __name__ == '__main__':
     finish = False
 
     # INICIO
-    '''print('----------------------------------------------')
+    print('----------------------------------------------')
     print('\tBEM-VINDO AO BANCO IMOBILIÁRIO')
     print('----------------------------------------------')
 
@@ -82,17 +120,16 @@ if __name__ == '__main__':
         newPlayer(jogadores)
 
     time.sleep(2)
-    os.system("cls")'''
+    os.system("cls")
 
-    jogadores = ['Fulano', 'Sicrano']
     while(finish == False):
         header()
         ordem = 0
         ordem = vezDe(2, ordem)
         print('Vez de', end=' ')
-        print(Back.WHITE + Style.BRIGHT + f'{jogadores[ordem-1]}' + Back.RESET + Style.NORMAL)
+        print(Back.WHITE + Fore.BLACK + f'{jogadores[ordem-1]}' + Back.RESET + Style.NORMAL + Fore.RESET)
         
         dd = dado()
         print(f'Dado: {dd}')
 
-        acoes(dd, ordem)
+        acoes(dd, 1)
