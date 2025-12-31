@@ -10,10 +10,11 @@ Uma versão simples de Banco Imobiliário ainda em desenvolvimento, que pode ser
 1. Vá em "Code" na pasta do repositório no GitHub e clique em "Download ZIP"
 2. Após baixar o arquivo ZIP do projeto, vá em seu Gerenciador de Arquivos e extraia "banco_imobiliario_console.zip"
 3. Com o arquivo extraído, abra-o em seu editor de código
-4. Abra o arquivo [main.py](main.py)
-5. Crie um novo terminal
-6. Digite ```python main.py``` no terminal para iniciar o arquivo
-7. Divirta-se!
+4. Crie um novo terminal
+5. Digite ```pip install -r requirements.txt``` para instalar todas as bibliotecas necessárias
+6. Abra o arquivo [main.py](main.py)
+7. Digite ```python main.py``` no terminal para iniciar o arquivo
+8. Divirta-se!
 
 Obs.: É necessário que você tenha um editor de código, como o VS Code, instalado para isso.
 
