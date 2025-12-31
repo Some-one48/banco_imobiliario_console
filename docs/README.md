@@ -39,8 +39,6 @@ Ao iniciar o programa com o comando Ctrl+Alt+N, será impresso na tela
 Agora, você deverá inserir a quantidade de jogadores no terminal, variando de 2 a 4 pessoas.
 Seguindo o nosso exemplo, o grupo digitará "3".
 
-![imagem de exemplo 1](/docs/img/img1.png)
-
 Em seguida, será requisitado o nome dos jogadores, para definir os turnos.
 
         Digite o nome do jogador X: 
@@ -61,5 +59,9 @@ Não é necessário que os jogadores façam nada. Após 2 segundos o terminal se
 
 ### O Jogo
 
+## Banco de Imagens:
+Exemplo de preenchimento do primeiro ```input```
+![imagem de exemplo 1](/docs/img/img1.png)
+
 ## Licença
-Este projeto está licenciado sob a MIT License - veja o arquivo [LICENSE](LICENSE) para mais detalhes.  
+Este projeto está licenciado sob a MIT License - veja o arquivo [LICENSE](/docs/LICENSE) para mais detalhes.  
