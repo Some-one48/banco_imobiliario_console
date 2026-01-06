@@ -2,46 +2,12 @@ import csv
 from random import randint # pip install
 import os 
 import time
-from colorama import init, Fore, Back, Style # pip install
+from colorama import Fore, Back, Style # pip install
+import filesys as fs 
+import variaveis as var
 
-players = []
-sit = [
-    [0,0,0,0,0,'none'],
-    [0,0,0,0,0,'none'],
-    [0,0,0,0,0,'none'],
-    [0,0,0,0,0,'none'],
-    [0,0,0,0,0,'none'],
-    [0,0,0,0,0,'none'],
-    [0,0,0,0,0,'none'],
-    [0,0,0,0,0,'none'],
-    [0,0,0,0,0,'none'],
-    [0,0,0,0,0,'none'],
-    [0,0,0,0,0,'none'],
-    [0,0,0,0,0,'none'],
-    [0,0,0,0,0,'none'],
-    [0,0,0,0,0,'none'],
-    [0,0,0,0,0,'none'],
-    [0,0,0,0,0,'none'],
-    [0,0,0,0,0,'none'],
-    [0,0,0,0,0,'none'],
-    [0,0,0,0,0,'none'],
-    [0,0,0,0,0,'none'],
-    [0,0,0,0,0,'none'],
-    [0,0,0,0,0,'none'],
-    [0,0,0,0,0,'none'],
-    [0,0,0,0,0,'none'],
-    [0,0,0,0,0,'none'],
-    [0,0,0,0,0,'none'],
-    [0,0,0,0,0,'none'],
-    [0,0,0,0,0,'none'],
-    [0,0,0,0,0,'none'],
-    [0,0,0,0,0,'none'],
-    [0,0,0,0,0,'none'],
-    [0,0,0,0,0,'none'],
-    [0,0,0,0,0,'none'],
-    [0,0,0,0,0,'none'],
-    [0,0,0,0,0,'none'],
-]
+players = var.getPlayers()
+sit = var.getSit()
 
 def dado():
     dado = randint(1,6)
